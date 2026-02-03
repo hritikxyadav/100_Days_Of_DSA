@@ -6,7 +6,7 @@ int* twoSum(int* nums, int numsSize, int target, int* returnSize) {
     *returnSize = 2;
     
     int* result = (int*)malloc(2 * sizeof(int));
-    if (result == NULL) return NULL;
+    if (result == 0) return 0;
 
     for (int i = 0; i < numsSize; i++) {
         for (int j = i + 1; j < numsSize; j++) {
@@ -18,5 +18,5 @@ int* twoSum(int* nums, int numsSize, int target, int* returnSize) {
         }
     }
     
-    return NULL;
+    return 0;
 }
